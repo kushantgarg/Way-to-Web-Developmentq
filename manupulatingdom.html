@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating Dom</title>
+</head>
+<body>
+    <div   id="main" class="container">
+        <ul id="Nav">
+        <li>Home</li>
+        <li>about</li>
+        <li>services</li>
+        <li>more</li>
+        <li>fact</li></ul>
+    </div>
+    <div class="container">
+        another container
+    </div>
+    <script>
+        let main=document.getElementById('main');
+        //  hance using it we are getting acess of main container
+        //  we have so many function to access and manipualte DOM
+        console.log(main);
+let nav=document.getElementById('Nav');
+//  now i can change the html in nav
+console.log(nav);
+let classa=document.getElementsByClassName('container');
+console.log(classa);
+
+
+</script>
+</body>
+</html>

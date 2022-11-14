@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEfore and after pseudo selector</title>
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+        background-color: black;
+        color: white;
+    }
+    /*  if we put background image in body than it will not cover the whole page as well and if we reduce the opaqueness of image 
+     then the text opacity will also get decrease */
+     /*  so we will put the image before the head using before pseudo selector so that if we apply the properties to image it will reduce that only */
+     /*  we use 2 colons in it */
+     header::before{
+        background: url("source of image") no-repeat center center/cover;
+        content: "";
+        position: absolute;
+        /*  as we give it the absolute position we will give it top and bottom to o */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        /*  we have set the z index as -1 because we not want the image to overlap our content so we use zindex and give it min value  */
+        opacity:0.3;
+        /*  we have reduce the opacity off the image 
+        this property is used to reduce the opacity */
+
+     }
+    .navigation{
+        font-size: 20px;
+        display: flex;
+        
+    }
+    li{
+     list-style: none;
+     padding: 34px 23px;
+    }
+section{
+    height: 344px;
+    border: 3px solid green;
+    margin: 3px 23px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;}
+    p{
+
+    }
+/* if i want to insert some content before the section we can use before pseudo selector
+section::before{
+    content:"This is a extra added content";
+   
+}
+/* if i want to insert some content after the section we can use after pseudo selector */
+/* section::after{
+    content:"This is a extra added content";
+   
+} */ 
+/*  but i will not use before and after pseudo selector to do this so i will do some other tasks */
+</style>
+</head>
+<body>
+    <header><nav class="navbar">
+        <ul class="navigation">
+            <li class="item">home</li>
+            <li class="item">about us</li>
+            <li class="item">services</li>
+            <li class="item">cntact us</li>
+        </ul>
+    </nav>
+<section>
+    <h3>welcome to the coding world</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus molestias voluptates modi perferendis, iusto ex fugit fugiat atque amet accusamus dolorem? Consequatur quidem qui nesciunt aliquid ipsam neque incidunt corporis!</p>
+</section></header>
+</body>
+</html>

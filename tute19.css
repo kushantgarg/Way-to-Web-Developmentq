@@ -1,0 +1,24 @@
+#firstpara{
+ background-color: red;
+ /* througgh this we are defining the height and width of the block  */
+ height: 100px;
+ width: 455px;   
+ /* applying border to the block ? */
+ border-width: 4px;
+ border-color: green;
+ border-style: solid;
+ /* border radius is used to curve the edges  */
+ border-radius: 11px;
+}
+#secondpara{
+
+    height: 1100px;
+    width: 455px;   
+ background-image: url(kushant.jpg);   
+ /* image is there in background but we will adjust it accordingly  */
+ border: 2px solid red;
+ /* to set image appearance that it not repeats; */
+ background-repeat: no-repeat;
+ /* to set the position of image in background */
+ background-position: center top ;
+ }

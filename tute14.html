@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css selectors</title>
+<!-- we are using internal css in this just to take less time -->
+<style>
+    /* element selecotr */
+    p{color: brown;}
+    /* id selector if i have to apply style to any one of the tag  */
+    /* we use # symbol to select id */
+    /* this will color only that tag which has id as blue color */
+#bluecolor{color: blue;}
+/* class selector/ */
+/* to select class we use . operator */
+.red,.blue{color: red;}
+/* css grouping selector
+incase of css grouping selector i can add property to multiple tag seperated by,  */
+div,p{
+    /* background-color: blue; */
+}
+</style>
+</head>
+<body>
+    <h3 class="blue">CSS SELECTOR</h3>
+    <p class="red">this is a simple paragraph to demonstrate the css selector</p>
+    <p class="red">this is a simple paragraph to demonstrate the css selector</p>
+    <p id="bluecolor">this is a simple paragraph to demonstrate the css selector</p>
+    <div>
+    <p>this is a simple paragraph to demonstrate the css selector</p>
+</div>
+    <p>yet anothher simple paragraph</p>
+</body>
+</html>

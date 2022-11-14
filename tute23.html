@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigation bar </title>
+<style>
+    .navigation{
+        background-color: grey;
+        border-radius: 30px;
+    }
+    /*  we will aplly the css property to all li tags under navigation class */
+    .navigation li{
+        float: left;
+        /*  after floating it left we can see the the text has been arranged but the bullets are still coming so to avoid so i will do the list styling  */
+        /*  this is similiar to the border none */
+        list-style: none;
+        margin: 13px 20px;
+        
+    }
+    /*  after floating the content we are not ablr to see the background color and this is becasuse when ever we float a element it overflows from his parent */
+    /*  to get background color back i have to tarrget ull tag of navigation class and then do overflow auto */
+    .navigation ul{
+        overflow: auto;
+    }
+    .navigation a{
+        padding: 3px 3px;
+        text-decoration: none;
+color: white;
+}
+.searchbox{
+    color: white;
+    float: right;   
+    padding: 12px 75px;
+}
+.navigation input{
+    border: 2px solid black;
+    border-radius: 14px;
+    padding: 3px 4px;
+    width: 150px;
+}
+</style>
+</head>
+<body>
+    <header>    <!--  to make a navigation bar we will make use of nav tag in html -->
+    <nav class="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Abou</a></li>
+            <li><a href="#">Serv</a></li>
+            <li><a href="#">Cont</a></li>
+       <div class="searchbox">
+        <input type="text" name="search" id="search" placeholder="search this website">
+       </div>
+        </ul>
+    </nav>
+</header>
+
+</body>
+</html>

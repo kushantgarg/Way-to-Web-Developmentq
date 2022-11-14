@@ -1,0 +1,39 @@
+/*  we have a universal selector also in a css hence the property that 
+we apply to them is applicable to all the eleements
+until and unless you override them */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-color: rgb(79, 61, 245) ;
+    border: 13px solid rgb(64, 6, 119);
+/* now i will give padding to our content  */
+ /* padding come inside the border of the content   */
+ /* hence applying the paddingg will do the work inside the border to our content  */
+/* padding:79px; */
+/* outisde the border we have marginn  so we will apply the margin now */
+/* margin: 34px; */
+/*  similiarly to the border wwe 
+can also apply margin and padding to 
+particular side of the content*/
+ /* padding-top:79px  ; */
+ margin: 89px;
+ /* i can  also appply padding
+ to differnent side 
+ different dimension in 
+ one line */
+ 
+ padding: 23px 56px 6px 78px;/* padding=top right bottom left */
+/*  this thing also applies on margin */
+/*  we can aslo set in a pair top-bottom and left-right 
+applicable on the case when we change pair  instead of four */
+/* padding: 34px 23px; */
+width: 433px;
+border-radius: 23px;
+/*  actually width of the block in comprise of the margin border and the 
+padding and the content */
+/*  but in order to avoid these thing and give a actual size to a box you can apply box size property */
+box-sizing: border-box;
+}

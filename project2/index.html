@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+
+    <title>GO-GREEN</title>
+</head>
+
+<body>
+    <section class="showcase " id="home">
+        <header>
+            <h1 class="logo">.🌿GO GREEN.</h1>
+            <div class="toggle "></div>
+        </header>
+        <video src="images/plants.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Plants Pleasure</h2>
+            <h3>Give life to your home with us</h3>
+            <p>
+            </p>
+            <a href="#">Shop with us</a>
+
+
+        </div>
+
+    </section>
+    <section class="cate" id="category">
+        <div class="h2">
+            <p>🙟 Categories 🙝</p>
+        </div>
+        <div class="home">
+
+            <div class="img1">
+                <img src="./images/garden.jpg">
+                <div class="text1">
+                    <a href="#">Garden Plant</a>
+                </div>
+            </div>
+            <div class="img1">
+                <img src="./images/air.jpg">
+                <div class="text1">
+                    <a href="#">Indoor Plant</a>
+                </div>
+            </div>
+            <div class="img1">
+                <img src="./images/indoor.jpg">
+                <div class="text1">
+                    <a href="#">Air Plant</a>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+    <section class="popular" id="popular">
+        <div class="h2">
+            <p>🙟 popular products 🙝</p>
+        </div>
+
+        <div class="category">
+            <ul class="list">
+                <li><button class="a1" href="#" onclick="plant(0)">sale</button></li>
+                <li><button class="a2" href="#" onclick="plant(1)">pot</button></li>
+                <li><button class="a3" onclick="plant(2)">flower</button></li>
+            </ul>
+        </div>
+
+        <div class="gallery">
+            <div class="img">
+                <img id="i1" src="./images/plant..jpg">
+            </div>
+
+            <div class="img2">
+                <img id="i2" src="./images/in.jpg">
+            </div>
+            <div class="img3">
+                <img id="i3" src="./images/c3.jpg">
+            </div>
+            <div class="img4">
+                <img id="i4" src="./images/g.jpg">
+            </div>
+            <div class="img5">
+                <img id="i5" src="./images/g2.jpg">
+            </div>
+            <div class="img6">
+                <img id="i6" src="./images/p4.jpg">
+            </div>
+            <div class="img7">
+                <img id="i7" src="./images/indoor.jpg">
+            </div>
+
+        </div>
+
+        </center>
+
+    </section>
+    <script>
+        function plant(sw) {
+            var p1;
+            if (sw == 0) {
+                p1 = "./images/plant..jpg"
+            } else if (sw == 1) {
+                p1 = "./images/1.jpg"
+            }
+            else {
+                p1 = "./images/flo2.jpg"
+            }
+            document.getElementById('i1').src = p1;
+            var p2;
+            if (sw == 0) {
+                p2 = "./images/in.jpg"
+            } else if (sw == 1) {
+                p2 = "./images/pot1.jpg"
+            }
+            else {
+                p2 = "./images/g1.jpeg"
+            }
+            document.getElementById('i2').src = p2;
+
+            var p3;
+            if (sw == 0) {
+                p3 = "./images/c3.jpg"
+            } else if (sw == 1) {
+                p3 = "./images/c1.jpg"
+            }
+            else {
+                p3 = "./images/f4.jpeg"
+            }
+            document.getElementById('i3').src = p3;
+
+            var p4;
+            if (sw == 0) {
+                p4 = "./images/g.jpg"
+            } else if (sw == 1) {
+                p4 = "./images/p3.jpg"
+            }
+            else {
+                p4 = "./images/f11.jpg"
+            }
+            document.getElementById('i4').src = p4;
+
+            var p5;
+            if (sw == 0) {
+                p5 = "./images/g2.jpg"
+            } else if (sw == 1) {
+                p5 = "./images/p2.jpg"
+            }
+            else {
+                p5 = "./images/f1.jpeg"
+            }
+            document.getElementById('i5').src = p5;
+
+            var p6;
+            if (sw == 0) {
+                p6 = "./images/p4.jpg"
+            } else if (sw == 1) {
+                p6 = "./images/c4.jpg"
+            }
+            else {
+                p6 = "./images/f3.jpg"
+            }
+
+            document.getElementById('i6').src = p6;
+
+            var p7;
+            if (sw == 0) {
+                p7 = "./images/indoor.jpg"
+            } else if (sw == 1) {
+                p7 = "./images/2.png"
+            }
+            else {
+                p7 = "./images/f0.jpg"
+            }
+            document.getElementById('i7').src = p7;
+
+        }
+    </script>
+
+    <!--popular-->
+
+    <section class="about" id="about">
+
+        <div class="h2">
+            <p>🙟 About us 🙝</p>
+        </div>
+        <div class="row">
+
+            <div class="column">
+                <div class="card">
+                    <h1 class="ic">
+                        <center><img src="./images/leaf.png"></center>
+                    </h1>
+                    <h2>GO GREEN</h2>
+                    <p>We help you decorate your home in more living and healthy way.</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <h1 class="ic"><img src="./images/delivery.png"></h1>
+                    <h2>GO GREEN</h2>
+                    <p>Fast and Free delivery all over world, 7 days a week.</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <h1 class="ic"><img src="./images/flowers.png"></h1>
+                    <h2>GO GREEN</h2>
+                    <p>We provide different varities of plants and pots.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="counter" id="sucess">
+
+        <div class="h2">
+            <br><br>
+            <p style="color: #1f441e;">🙟 Our Sucess 🙝</p>
+        </div>
+        <div class="row1">
+            <div class="column1">
+                <div class="body">
+                    <img src="./images/happy.png">
+                    <p class="counte">1200</p>
+                    <p class="ha">happy customer</p>
+                </div>
+            </div>
+            <div class="column1">
+                <div class="body">
+                    <img src="./images/tree.png">
+                    <p class="counte">2159</p>
+                    <p class="ha">plant planted</p>
+                </div>
+            </div>
+            <div class="column1">
+                <div class="body">
+                    <img src="./images/earth.png">
+                    <p class="counte">96</p>
+                    <p class="ha">Global Connection </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--team-->
+    <section class="teamm" id="team">
+
+        <div class="h2">
+            <p>🙟 Our Team 🙝</p>
+        </div>
+        <div class="cont">
+            <div class="our-team">
+                <div class="teampic">
+                    <img src="images/r.png">
+                </div>
+                <div class="team-content">
+                    <h3 class="title">Ranu Vyas</h3>
+                    <span class="post">CEO</span>
+                    <p>Lorem ipsum dolor sit. </p>
+                </div>
+                <ul class="sociall">
+                    <li><a href="#" class="fab fa-facebook"></a></li>
+                    <li><a href="#" class="fab fa-instagram"></a></li>
+                    <li><a href="#" class="fab fa-twitter"></a></li>
+
+                </ul>
+            </div>
+
+            <div class="our-team">
+                <div class="teampic">
+                    <img src="images/ranu.png">
+                </div>
+                <div class="team-content">
+                    <h3 class="title">CmVyas</h3>
+                    <span class="post">Manager</span>
+                    <p>Lorem ipsum dolor sit.</p>
+                </div>
+                <ul class="sociall">
+                    <li><a href="#" class="fab fa-facebook"></a></li>
+                    <li><a href="#" class="fab fa-instagram"></a></li>
+                    <li><a href="#" class="fab fa-twitter"></a></li>
+                </ul>
+            </div>
+
+            <div class="our-team">
+                <div class="teampic">
+                    <img src="images/ran.jpg">
+                </div>
+                <div class="team-content">
+                    <h3 class="title">St3llax</h3>
+                    <span class="post">Developer</span>
+                    <p>Lorem ipsum dolor sit.</p>
+                </div>
+                <ul class="sociall">
+                    <li><a href="#" class="fab fa-facebook"></a></li>
+                    <li><a href="#" class="fab fa-instagram"></a></li>
+                    <li><a href="#" class="fab fa-twitter"></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+
+        <footer class="footerr">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>GO GREEN</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">24x7 services</a></li>
+                            <li><a href="#">Free Delivery</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Shop with Us</h4>
+                        <ul>
+                            <li><a href="#">Air plant</a></li>
+                            <li><a href="#">water plant</a></li>
+                            <li><a href="#">indoor plant</a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Special Offers</h4>
+                        <ul>
+                            <li><a href="#">Office plant</a></li>
+                            <li><a href="#">Vase</a></li>
+                            <li><a href="#">pot</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex;justify-content: center;align-items: center; margin-top: 80px; color:  #1f441e;">
+                <p>Made With ❤️ By CM_Vyas</p>
+            </div>
+        </footer>
+    </section>
+
+    <div class="menu">
+        <ul>
+
+            <li><a href="#category">Categories</a></li>
+            <li><a href="#popular">Popular</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#sucess">Our Sucess</a></li>
+            <li><a href="#team">Team</a></li>
+        </ul>
+
+    </div>
+
+
+
+    <script>
+        $(document).ready(function () {
+            $('.counte').counterUp({
+                delay: 20,
+                time: 1200
+            });
+        });
+    </script>
+
+    <script>
+
+        var testimonials = document.getElementById('testimonials');
+        var control1 = document.getElementById('control1');
+        var control2 = document.getElementById('control2');
+        var control3 = document.getElementById('control3');
+
+
+        control1.onclick = function () {
+            testimonials.style.transform = "translateX(870px)";
+            control1.classList.add("active");
+            control2.classList.remove("active");
+            control3.classList.remove("active");
+        }
+
+        control2.onclick = function () {
+            testimonials.style.transform = "translateX(0px)";
+            control1.classList.remove("active");
+            control2.classList.add("active");
+            control3.classList.remove("active");
+        }
+
+        control3.onclick = function () {
+            testimonials.style.transform = "translateX(-870px)";
+            control1.classList.remove("active");
+            control2.classList.remove("active");
+            control3.classList.add("active");
+        }
+
+
+
+
+
+    </script>
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const showcase = document.querySelector('.showcase');
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            showcase.classList.toggle('active');
+        })
+    </script>
+
+</body>
+
+</html>

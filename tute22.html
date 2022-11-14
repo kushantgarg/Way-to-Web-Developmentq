@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selector and more desining</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: rgb(151, 227, 151);
+            padding: 34px;
+            /* margin: 54px; */
+            width: 666px;
+            margin: 34px auto;
+
+        }
+        /* styling the link and the button  */
+        .btn{
+
+            background-color: antiquewhite;
+            padding: 6px;
+            /* in the webpage we have a link names with read more and the button with the name 
+            contact us so the buttin is having the border and the link is not to make both similiar we can remover the border from the both  */
+            border: none;
+            /* cursor  property of css is used to change our cursor shape when gone on that link or button  */
+            cursor: pointer;
+            font-size: 23px;
+            border-radius: 4px;
+            /*  now we have make almost both the button identical but the link is having the underline but the button is not having the underline so we will edit the link in order to remove the underline */
+        }
+        a{
+            /* text decoration property of css is used to decirate our text with any thing */
+            text-decoration: none;
+        color: black;
+        }
+        /* pseudo selector: there are various proerties that fall under this category and is used when the linked is not actually clinked just seen with the pointer  */
+        /* 1st */
+        a:hover{
+            /* when you will hover your mouse pointer over the link this will happen */
+            color: blue;
+            background-color: aqua;
+        }
+        /* 2nd is for visited links */
+        a:visited{
+            /*  so color of each visited link in your webpage will change to yllow */
+            color: yellow;
+        }
+        /* 3rd active */
+        a:active{
+            color: darkblue;
+            /* when you will click on this link the link will follow prperty enclosed inthis */
+        }
+        /*  we can also apply pseudoselector in the bottons and it have all 3 properties as the link has hover visited and active */
+   /*  we can add any property under this pesudoselector categories */
+   button:hover{
+    background-color: crimson;
+   }
+   </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum officiis sequi neque aliquam, inventore deleniti illum libero alias eum cum sed accusantium enim odio praesentium totam. Aspernatur optio recusandae accusantium!</p>
+        <!-- you can use button tag  in html to show the button an where on the screen  -->
+        <a href="" class="btn">Read More</a>
+        <button class="btn">contact us</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS COLORS AND CUSTOM PROPERTIES</title>
+<style>
+    :root
+    {
+         /*  this variables can be used in whole style sheet as these are declared global */
+        --boxxxx:red;
+        --chutiya:12px;
+    }
+    .box{
+        /*  see now i am making a variable that will store something  and then we can use this variable name to apply that stored value where it is required*/
+         --box-colour:blue;  
+        width: 200px;
+        height: 200px;
+        background-color: var(--box-colour);
+        border: 2px solid red;
+        box-shadow: 3px 3px  var(--box-colour);
+        margin: 2px 9px;
+    }
+</style>
+</head>
+<body>
+    
+</body>
+</html>

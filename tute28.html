@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox tutorials</title>
+    <style>
+        .container{
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            /*  to tell that this container is a flex container or the type of the flexbox */
+            /*  we will set its display as flex */
+            display: flex;
+            /* now your conatiner hass become the flex container and the items in it has become the flex item s */
+            /* so by now we can apply the properties of flex conatiner on them */
+        flex-direction: row;
+ /* default vales of flex direction is row */
+        /* flex-direction: column;
+        flex-direction: column-reverse;
+        flex-direction: row-reverse; */
+        flex-wrap: wrap;
+        justify-content: space-between;
+        justify-content: space-evenly;
+        justify-content: space-around;
+        align-items: center;
+        align-items: flex-end;
+        align-items: flex-start;
+        align-items: stretch;
+        }
+        /* flex properties */
+        .item
+        {
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+        }
+        #ite-1{
+            /* we can change the order of item in the flex box using the order property
+            higher the order later it will be shown in the container */
+/* order: 3; */
+flex-grow: 4;
+        }
+    </style>
+</head>
+<body>
+    <h1> this is a flexbox tutoria</h1>
+    <div class="container">
+        <div class="item" id="ite-1">first box</div>
+        <div class="item" id="ite-2">second box</div>
+        <div class="item" id="ite-3">third box</div>
+        <div class="item" id="ite-4">fourth box</div>
+        <div class="item" id="ite-5">fifth box</div>
+        <div class="item" id="ite-6">sisth box</div>
+    </div>
+</body>
+</html>

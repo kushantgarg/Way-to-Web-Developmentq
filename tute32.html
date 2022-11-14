@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>BOx shadow and text shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 23px 23px;
+            margin: 23px 12px;
+            /* border: 2px solid red; */
+            background-color: burlywood;
+            box-shadow: 10px 23px green;
+            /* x side offset then yside offset and then colour of shadow */
+        /*  if i give negative values to box shadw then the shadow will be shifted to upper side */
+        /* i can also give the blur radius */
+        /*  blur radius decide krti ha ki kitna fialana ha colour ko shadow mee */
+        /* spread radius tells that  how much you want to spread the shadow */
+        /*  we can do all in just one line for example */
+        box-shadow: 2px 3px 10px 11px green;
+        /*  it represent x offset y offset blur radius spread radius and then colour */
+        /*  here in colur we can use rgba(r,g,b,a) */
+        /* here alpha decide tthe darkness of the colour in the shadow */
+        /*  if i want ki jo box shadow ha andar ki taraf jaye then we can make use of inset */
+        box-shadow: inset 2px 3px green ;
+        /*  we can also apply more than one shadow to a box called as multi shadow using properties seperated by coma */
+        box-shadow: 2px 3px green,5px 4px red;
+        /*  text shadow */
+                }
+  .card h2{
+    text-shadow: 3px 2px red;
+         /*  all properties of box shadow can be used in text shadow */
+  }
+  /*  we will use text shadow when ever we want to hightlight our text on images */
+  /* we always use box shadow when ever we want to highlight our text over background  */
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card1"><h2>card1</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae nulla accusamus tempora tempore et assumenda, ea optio eveniet architecto dolorum nesciunt laudantium, error hic. Dolorem veritatis perspiciatis consequuntur facilis culpa.</p></div>
+        <div class="card" id="card2"><h2>this is a c++ course</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt molestias culpa dolorem tenetur dignissimos quia repellendus cumque, temporibus exercitationem itaque ratione, ex illum nobis architecto similique blanditiis. Necessitatibus, reiciendis voluptatum!</p></div>
+        <div class="card" id="card3"><h2>card3</h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas suscipit a voluptatem, cumque quidem perferendis delectus? Reprehenderit perferendis sit, hic porro mollitia suscipit modi alias culpa labore, assumenda necessitatibus!</div>
+    </div>
+</body>
+</html>
