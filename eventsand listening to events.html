@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js events</title>
+<style>
+    #btn{
+        padding: 10px 14px;
+        border: 2px solid green;
+        background-color: blanchedalmond;
+        font-size: larger;
+        border-radius: 32px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>this is heading</h1>
+        <p id="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum illum beatae veritatis exercitationem reprehenderit repellat maxime quisquam soluta corrupti, accusamus dolor maiores voluptates minus atque consectetur odit magnam quaerat quis.
+        Nostrum quos ipsam a facilis temporibus asperiores placeat atque assumenda non, laboriosam ex culpa dignissimos eum quasi amet fugit voluptatibus nesciunt facere suscipit. Fuga nostrum numquam, porro modi nesciunt quae!
+        Velit porro, optio accusamus voluptatem tempora, rem placeat facere et quaerat architecto laborum minus reprehenderit voluptate omnis. Soluta facere reprehenderit minus quaerat ipsum, at, modi eveniet voluptatum perferendis dignissimos amet.
+        Nisi cupiditate et quis deserunt itaque praesentium nesciunt dicta, harum repellendus doloremque exercitationem minus vitae necessitatibus maiores ullam fuga illum, in, reprehenderit magnam repellat assumenda iure ipsum optio quos! Obcaecati.
+        Nulla, voluptate? Officiis beatae minima cupiditate asperiores dolore illo nesciunt, et vero incidunt doloribus voluptatem soluta. Delectus, quaerat. Nemo molestias facilis consequuntur magni beatae! Eius placeat asperiores odit velit voluptatem.
+        Dignissimos cum vel repudiandae quam, quo libero quasi neque optio dolorum voluptate nisi ad! Eaque quasi aliquam quas error quidem iusto perspiciatis laboriosam molestiae repellendus, magnam ducimus dignissimos adipisci impedit?
+        Amet neque dicta dolores, aut veniam debitis tenetur, labore cum nobis nemo dolor blanditiis consectetur perspiciatis iure nisi nesciunt repellendus. Nesciunt nulla suscipit quos vel omnis aspernatur et quod reiciendis!
+        Quae alias tenetur vero, ratione veritatis expedita sint ipsa quas repudiandae mollitia ad minima adipisci? Asperiores, in doloribus tempore deleniti inventore laboriosam vitae enim incidunt tempora dignissimos ut saepe ullam!
+        Cupiditate ullam provident consequuntur explicabo ratione eum ad cumque in sequi alias aliquid iste dolor, illo minima, similique quo nesciunt dolorem corrupti accusamus, fugiat commodi saepe tempore esse. Incidunt, ipsa.
+        Neque qui ab reiciendis odio iure maxime sapiente nostrum ea iusto, corrupti temporibus, facere magni rem similique laudantium. Fugit, ut. Placeat provident sapiente voluptates illum possimus, nam tempore. Repellendus, alias.
+        Provident sapiente saepe sequi sed vero suscipit perferendis similique, id, sit quisquam minima atque cum necessitatibus corrupti? Vel eaque, tempora officiis sint in maiores facilis ad neque quod ipsum ut.
+        Iure labore in voluptatibus quidem ratione corrupti mollitia repellat ipsam earum. Explicabo, corrupti dolorum quas quidem dignissimos doloremque! Accusantiu 
+        </p>
+    </div>
+    <!--  basically i have made this button to make this paragraph hide or show and we will use java script to do so 
+    so clicking the button is a event and we will listen this event and then perform accordingly -->
+    <button id="btn" onclick="hide()">
+        <!--  on click ek event ha jo ki mouse click krte hi hide function ko call karega and function me java script me likhta hu -->
+        <!--  like this onclick event we have ultiple events for that we can  make a separate function in java script -->
+        <!--  syntax is that event="funciton " -->
+
+        Show/hide
+    </button>
+    <script>
+          para=document.getElementById('para');
+        //    now we will see the addeventlistner in java script 
+        //  if we use event listner in java script then we can ad any event here only and write code for it there is no need to call function from the dom 
+        //  so suppose i want to add event to my para only then 
+     
+        para.addEventListener("mouseover", function run() {
+  console.log("HEllo");
+});
+//  syntax
+// para.addEventListener("name of event", function run()  function name{
+//     conde for the fucniton 
+//   alert("HEllo");
+// });
+        function hide()
+        {
+            btn=document.getElementById('btn');
+      
+            //  we grab the control of the btn using this
+            //  now i want that if para is visible and we click the button it get hide and vice versa
+            //  so to do so 
+            //  basically we can appl the css to the selected tags in the java script as we want and at the time at we want
+            // para.style.display='none';
+if(para.style.display!='none')
+{
+    //  to change css we can write element.style.property="value"
+    para.style.display='none';
+}
+else
+para.style.display='block';
+
+       
+        }
+    </script>
+    
+</body>
+</html>

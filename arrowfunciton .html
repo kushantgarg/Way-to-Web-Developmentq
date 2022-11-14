@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrow fucntion </title>
+</head>
+<body>
+    <div class="container">
+        This is a arrow function tutorial 
+    </div>
+    <script>
+        // instead of definign fucntion in this way we can use arrow operator that will ease our work
+        // => this is a arrow operator
+        // example for it
+        greet=()=>{
+            console.log("HEllo we are using arrow operaotr");
+        }
+        // function greet(){
+        //     console.log('this is a java script tutorial');
+
+        // }
+         greet();
+        //   another use of arrow operator is in set timme out funciton 
+        setTimeout(() => {
+            console.log("hey i am inside set time out");
+
+            //  here we can define a funciton 
+        },3000);
+        //  so we can make function easitly using aroew operaotr
+        //  to make a sum
+        let sum=(a,b)=>a+b;
+    </script>
+</body>
+</html>
